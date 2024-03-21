@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/MaelMainsard/microapp-deploy
     targetRevision: HEAD
-    path: ./
+    path: ./frontend
   destination: 
     server: https://kubernetes.default.svc
     namespace: front-end-pod
