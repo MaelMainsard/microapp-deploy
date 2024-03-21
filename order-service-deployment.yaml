@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: order-service-pod
+  template:
+    metadata:
+      labels:
+        app: order-service-pod
+    spec:
+      containers:
+      - name: order-service
+        image: cicd-project-order-service:0.0.0
+        ports:
+        - containerPort: 3002
