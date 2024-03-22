@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: front-end-argo-application
+  name: myapp
 spec:
-  replicas: 3
   selector:
     matchLabels:
-      app: front-end-pod
+      app: myapp
+  replicas: 2
   template:
     metadata:
       labels:
-        app: front-end-pod
+        app: myapp
     spec:
       containers:
-      - name: frontend
-        image: cicd-project-frontend:0.0.0
+      - name: myapp
+        image: maelmainsard/cicd-project-frontend:0.0.0
         ports:
         - containerPort: 3000
