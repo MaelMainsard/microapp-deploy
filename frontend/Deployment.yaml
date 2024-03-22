@@ -16,4 +16,4 @@ spec:
       - name: myapp
         image: maelmainsard/cicd-project-frontend:0.0.0
         ports:
-        - containerPort: 3000
+        - containerPort: 8080
