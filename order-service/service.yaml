@@ -9,5 +9,4 @@ spec:
   - port: 3002
     protocol: TCP
     targetPort: 3002
-  
-
+  type: LoadBalancer
