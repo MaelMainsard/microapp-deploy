@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Deployment
+  name: myapp
 spec:
-  replicas: 3
   selector:
     matchLabels:
-      app: order-service-pod
+      app: myapp
+  replicas: 2
   template:
     metadata:
       labels:
-        app: order-service-pod
+        app: myapp
     spec:
       containers:
-      - name: order-service
-        image: cicd-project-order-service:0.0.0
+      - name: myapp
+        image: maelmainsard/cicd-project-order-service:0.0.0
         ports:
         - containerPort: 3002
