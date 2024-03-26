@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: order-service
+  name: order-service
+  namespace: order-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: order-service
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: order-service
+    spec:
+      containers:
+      - image: maelmainsard/cicd-project-order-service:0.0.0
+        name: order-service
+      resources: {}

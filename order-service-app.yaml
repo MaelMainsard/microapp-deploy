@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: order-service-app
+  namespace: argocd
+spec:
+  destination:
+    namespace: order-service
+    server: https://kubernetes.default.svc 
+  project: default 
+  source: 
+    path: order-service
+    repoURL: https://github.com/MaelMainsard/microapp-deploy
+    targetRevision: HEAD
+  syncPolicy: 
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true
