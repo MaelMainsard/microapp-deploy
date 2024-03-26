@@ -6,7 +6,6 @@ metadata:
   name: order-service
   namespace: order-service
 spec:
-  type: NodePort
   ports:
   - port: 3002
     protocol: TCP
