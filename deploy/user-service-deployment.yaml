@@ -17,7 +17,7 @@ spec:
         app: user-service
     spec:
       containers:
-      - image: maelmainsard/cicd-project-user-service:0.0.3
+      - image: maelmainsard/cicd-project-user-service:0.0.4
         name: user-service
         ports:
           - containerPort: 3001
