@@ -17,7 +17,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: maelmainsard/cicd-project-frontend:0.0.3
+      - image: maelmainsard/cicd-project-frontend:0.0.4
         name: frontend
         ports:
           - containerPort: 3000
