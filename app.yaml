@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc 
   project: default 
   source: 
-    path: user-service
+    path: deploy
     repoURL: https://github.com/MaelMainsard/microapp-deploy
     targetRevision: HEAD
   syncPolicy: 
