@@ -2,23 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: order-service
-  name: order-service
+    app: user-service
+  name: user-service
   namespace: microapp-deploy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: order-service
+      app: user-service
   strategy: {}
   template:
     metadata:
       labels:
-        app: order-service
+        app: user-service
     spec:
       containers:
-      - image: maelmainsard/cicd-project-order-service:0.0.0
-        name: order-service
+      - image: maelmainsard/cicd-project-user-service:0.0.0
+        name: user-service
         ports:
-          - containerPort: 3002
+          - containerPort: 3001
       resources: {}

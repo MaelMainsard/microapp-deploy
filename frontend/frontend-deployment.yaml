@@ -2,23 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: order-service
-  name: order-service
+    app: frontend
+  name: frontend
   namespace: microapp-deploy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: order-service
+      app: frontend
   strategy: {}
   template:
     metadata:
       labels:
-        app: order-service
+        app: frontend
     spec:
       containers:
-      - image: maelmainsard/cicd-project-order-service:0.0.0
-        name: order-service
+      - image: maelmainsard/cicd-project-frontend:0.0.0
+        name: frontend
         ports:
-          - containerPort: 3002
+          - containerPort: 3000
       resources: {}

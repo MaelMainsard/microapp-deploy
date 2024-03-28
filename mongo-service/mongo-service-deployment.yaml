@@ -2,23 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: order-service
-  name: order-service
+    app: mongo-service
+  name: mongo-service
   namespace: microapp-deploy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: order-service
+      app: mongo-service
   strategy: {}
   template:
     metadata:
       labels:
-        app: order-service
+        app: mongo-service
     spec:
       containers:
-      - image: maelmainsard/cicd-project-order-service:0.0.0
-        name: order-service
+      - image: maelmainsard/cicd-project-mongo-service:0.0.0
+        name: mongo-service
         ports:
-          - containerPort: 3002
+          - containerPort: 27017
       resources: {}
