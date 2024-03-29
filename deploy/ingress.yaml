@@ -4,6 +4,7 @@ metadata:
   name: frontend-ingress
   namespace: microapp-deploy
 spec:
+  ingressClassName: nginx
   rules:
     - host: frontend.example.com
       http:
