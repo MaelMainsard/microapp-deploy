@@ -6,7 +6,7 @@ metadata:
   name: order-service
   namespace: microapp-deploy
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - port: 3002
     protocol: TCP

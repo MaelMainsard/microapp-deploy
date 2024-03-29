@@ -6,7 +6,7 @@ metadata:
   name: mongo-service
   namespace: microapp-deploy
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - port: 27017
     protocol: TCP
