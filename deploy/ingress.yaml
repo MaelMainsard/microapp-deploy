@@ -5,7 +5,7 @@ metadata:
   namespace: microapp-deploy
 spec:
   rules:
-  - host: frontend.local
+  - host: localhost
     http:
       paths:
       - path: /
@@ -15,10 +15,7 @@ spec:
             name: frontend
             port:
               number: 3000
-  - host: backend.local
-    http:
-      paths:
-      - path: /
+      - path: /api
         pathType: Prefix
         backend:
           service:
