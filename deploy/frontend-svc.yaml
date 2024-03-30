@@ -6,7 +6,7 @@ metadata:
   name: frontend
   namespace: microapp-deploy
 spec:
-  type: LoadBalencer
+  type: LoadBalancer
   ports:
   - port: 3000
     protocol: TCP

@@ -6,7 +6,7 @@ metadata:
   name: mongo-service
   namespace: microapp-deploy
 spec:
-  type: LoadBalencer
+  type: LoadBalancer
   ports:
   - port: 27017
     protocol: TCP
