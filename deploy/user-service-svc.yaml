@@ -9,7 +9,7 @@ spec:
   type: NodePort
   ports:
   - port: 3001
-    protocol: HTTP
+    protocol: TCP
     targetPort: 3001
   selector:
     app: user-service
