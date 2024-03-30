@@ -18,11 +18,18 @@ spec:
           service:
             name: frontend
             port:
-              number: 80
+              name: http
       - path: /order-service(/|$)(.*)
         pathType: Prefix
         backend:
           service:
             name: order-service
             port:
-              number: 3002
+              name: http
+      - path: /user-service(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: user-service
+            port:
+              name: http
