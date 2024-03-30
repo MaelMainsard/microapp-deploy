@@ -19,18 +19,18 @@ spec:
           service:
             name: frontend
             port:
-              name: http
+              number: 3000
       - path: /order-service
         pathType: Prefix
         backend:
           service:
             name: order-service
             port:
-              name: http
+              number: 3002
       - path: /user-service
         pathType: Prefix
         backend:
           service:
             name: user-service
             port:
-              name: http
+              number: 3001
