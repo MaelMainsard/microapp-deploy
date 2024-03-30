@@ -12,6 +12,13 @@ spec:
   rules:
   - http:
       paths:
+      - path: /frontend
+        pathType: Prefix
+        backend:
+          service:
+            name: frontend
+            port:
+              number: 3000
       - path: /order-service
         pathType: Prefix
         backend:
