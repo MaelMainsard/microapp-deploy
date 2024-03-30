@@ -9,7 +9,7 @@ spec:
   type: NodePort
   ports:
   - port: 3000
-    protocol: TCP
+    protocol: HTTP
     targetPort: 80
   selector:
     app: frontend

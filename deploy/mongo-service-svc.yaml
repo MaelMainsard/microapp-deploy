@@ -9,7 +9,7 @@ spec:
   type: NodePort
   ports:
   - port: 27017
-    protocol: TCP
+    protocol: HTTP
     targetPort: 27017
   selector:
     app: mongo-service
