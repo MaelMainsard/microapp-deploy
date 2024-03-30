@@ -13,11 +13,6 @@ spec:
     repoURL: https://github.com/MaelMainsard/microapp-deploy
     targetRevision: HEAD
   syncPolicy: 
-    automated:
-      prune: true
-      selfHeal: false
+    automated: {}
     syncOptions:
     - CreateNamespace=true
-    - ApplyOutOfSyncOnly=true
-    - PruneLast=true
-    - PrunePropagationPolicy=background
