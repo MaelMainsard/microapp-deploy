@@ -33,3 +33,10 @@ spec:
             name: user-service
             port:
               name: http
+      - path: /hello-world-one
+        pathType: Prefix
+        backend:
+          service:
+            name: aks-helloworld-one
+            port:
+              number: 80
