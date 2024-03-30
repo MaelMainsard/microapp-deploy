@@ -6,7 +6,7 @@ metadata:
   name: user-service
   namespace: microapp-deploy
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: user-service
