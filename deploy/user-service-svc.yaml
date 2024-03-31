@@ -6,7 +6,7 @@ metadata:
   name: user-service
   namespace: microapp-deploy
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 3001
     protocol: TCP
