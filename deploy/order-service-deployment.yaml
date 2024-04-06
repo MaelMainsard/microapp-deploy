@@ -17,7 +17,7 @@ spec:
         app: order-service
     spec:
       containers:
-      - image: maelmainsard/cicd-project-order-service:1.0.0
+      - image: maelmainsard/cicd-project-order-service:0.0.0
         name: order-service
         ports:
           - containerPort: 3002
