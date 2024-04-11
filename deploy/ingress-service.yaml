@@ -17,14 +17,14 @@ spec:
     http:
       paths:
       - path: /order(/|$)(.*)
-        pathType: Mixed
+        pathType: ImplementationSpecific
         backend:
           service:
             name: order-service
             port:
               number: 3002
       - path: /user(/|$)(.*)
-        pathType: Prefix
+        pathType: ImplementationSpecific
         backend:
           service:
             name: user-service
