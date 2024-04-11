@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: ""
+  - host: "api.microapp-deploy.com"
   - http:
       paths:
       - path: /order-service
