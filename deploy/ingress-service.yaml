@@ -12,8 +12,13 @@ metadata:
     # nginx.ingress.kubernetes.io/proxy-buffer-size: "16k" # Optional: you can adjust this value as needed
 spec:
   ingressClassName: nginx
+  defaultBackend:
+    service:
+      name: frontend
+      port:
+        number: 3000
   rules:
-  - host: "api.microapp-deploy.com"
+  - host: api.microapp-deploy.com
     http:
       paths:
       - path: /order
